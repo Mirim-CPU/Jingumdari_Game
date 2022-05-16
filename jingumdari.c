@@ -17,7 +17,7 @@ void drawTitle() {
 	int x = 48;
 	int y = 2;
 	system("cls");
-	
+
 	setColor(yellow, black);
 	printf("\n\t\t\t\t    _ _                            _           _      ");
 	printf("\n\t\t\t\t   (_|_)_ _   __ _  _  _ _ __   __| | __ _ _ _(_)     ");
@@ -27,7 +27,7 @@ void drawTitle() {
 
 
 	setColor(white, black);
-	x=37, y = 10;
+	x = 37, y = 10;
 	gotoxy(x, y);
 	printf(" ---||-------||-------||----||------||-------||-----");
 	gotoxy(x, ++y);
@@ -87,7 +87,7 @@ int menuDraw() {
 	int num = 1;
 	gotoxy(x - 2, y);
 	printf("> 시작하기\n");
-	gotoxy(x, y+1);
+	gotoxy(x, y + 1);
 	printf("종료하기");
 	while (1) {
 		input = _getch();
@@ -141,7 +141,7 @@ void gloop() {
 	int center = 15;
 	int index = center;
 	int turn = center;
-	int life = center-1;
+	int life = center - 1;
 	int arr_bool[16][2];	// 1 0 들어갈 배열
 	char arr_glass[16][2];
 	int a;
@@ -160,7 +160,7 @@ void gloop() {
 		//printf("\n");
 	}
 	while (1) {
-		
+
 		system("cls");
 		//테두리 그려주기
 		for (int i = 0; i < 70; i++) {
@@ -196,18 +196,23 @@ void gloop() {
 		x = 75;
 		y = 2;
 		gotoxy(x, y);
-		printf("떨어지면 죽는다 으아악~");
+		printf("저것 봐봐.. 저길 통과한대...");
 		y = 4; gotoxy(x, ++y);
-		setColor(red, black);
-		printf("(;´ㅠД<`)");
+		setColor(white, black);
+		printf(" /⌒＞―――＜⌒ヘ");
 		gotoxy(x, ++y);
-		printf("  _______//");
+		printf("｜／　　　　　＼｜");
 		gotoxy(x, ++y);
-		printf("  --|||||- ");
+		printf(" Y　　　　　　　Y");
 		gotoxy(x, ++y);
-		printf("    ||||| ");
+		printf(" | ●　　　 ●　|");
 		gotoxy(x, ++y);
-		printf("     || // ");
+		printf(" ＼ //(_人_) //ノ");
+		gotoxy(x, ++y);
+		printf("　 ＞――――イ");
+		gotoxy(x, ++y);
+		printf("　/　|　　　|)");
+	
 		setColor(white, black);
 
 		setColor(lightcyan, black);
@@ -235,7 +240,7 @@ void gloop() {
 		printf("1. 왼쪽 2. 오른쪽\n");
 		gotoxy(x, ++y);
 		scanf_s("%d", &a);
-		
+
 
 		y = 25;
 		if (a == 1 || a == 2) {
